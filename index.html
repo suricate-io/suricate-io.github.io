@@ -1,0 +1,224 @@
+---
+layout: default
+layout_grid: true
+home: true
+angularjs: true
+title: Suricate
+---
+<div ng-app="suricate.home" ng-controller="HomeController" class="home-container">
+    <!-- Header -->
+    <header id="header" class="home-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header-brand">
+                        <div class="logo-big">
+                            <img class="img-responsive" src="images/logo/suricate.png" alt="">
+                        </div>
+                        <div class="brand">Welcome to Suricate !</div>
+                    </div>
+
+                    <div class="intro-text">
+                        <hr class="star-light">
+                        <div class="row stats">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="https://github.com/suricate-io/suricate" target="_blank">
+                                    <div class="card dark summary-inline">
+                                        <div class="card-body">
+                                            <i class="icon fab fa-github fa-3x"></i>
+                                            <div class="content" ng-cloak>
+                                                <div class="title">{(gitConfig.stargazers_count)}</div>
+                                                <div class="sub-title">Stars</div>
+                                            </div>
+                                            <div class="clear-both"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="https://github.com/suricate-io/suricate/contributors" target="_blank">
+                                    <div class="card dark summary-inline">
+                                        <div class="card-body">
+                                            <i class="icon fa fa-users fa-3x"></i>
+                                            <div class="content" ng-cloak>
+                                                <div class="title">Our</div>
+                                                <div class="sub-title">Contributors</div>
+                                            </div>
+                                            <div class="clear-both"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- News section -->
+    <section id="news" class="padding-t-25 padding-b-25 home-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="heading">suricate news</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                <b>To get the latest suricate news, please follow us on Twitter:
+                <a href="https://twitter.com/SuricateIo" target="_blank"><i class="fab fa-twitter"></i> @SuricateIo</a></b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <h3>News</h3>
+                        <ul>
+                            <li><b>Release 1.0 planned very soon !</li>
+                        </ul>
+                        <h3>Events</h3>
+                          <ul>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="blue padding-t-50 padding-b-25 home-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="heading">What is suricate?</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <span class="title text-center">
+                    <div class="head-icons">
+                        <a href="http://projects.spring.io/spring-boot/" target="_blank"><img src="images/logo/svg/spring-boot.svg" class="project-icon img-responsive"></a>
+                        <i class="fa fa-4x">+</i>
+                        <a href="https://angular.io/" target="_blank"><img src="images/logo/svg/angular.svg" class="project-icon img-responsive"></a><br class="visible-xs">
+                        <i class="fa fa-4x">=</i>
+                        <a href="/"><img src="images/logo/suricate.png" class="project-icon img-responsive"></a>
+                    </div>
+                    <p class="lead">
+                      suricate is a platform to monitor project, server, whatever our widgets support :)
+                      <a class="dark" href="http://projects.spring.io/spring-boot/" target="_blank">Spring Boot</a> + <a class="dark" href="https://angular.io/" target="_blank">Angular</a>
+                    </p>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stack options Section -->
+    <section id="opts" class="blue padding-t-50 padding-b-25 home-section">
+        <div class="row no-margin">
+            <div class="col-lg-12 text-center">
+                <h2 class="heading">Client side stack</h2>
+                <hr class="star-light">
+            </div>
+        </div>
+        <div class="row stack-container no-margin">
+            <ul class="text-center stacks">
+                <li class="clip img-circle">
+                    <img src="images/logo/svg/html-5.svg" />
+                    <span class="title_sub_tech">HTML5</span>
+                </li>
+                <li class="clip img-circle new">
+                    <img src="images/logo/svg/angular.svg" />
+                    <span class="title_sub_tech">Angular</span>
+                </li>
+                <li class="clip img-circle new">
+                    <img src="images/logo/icons/websocket.png" class="invert"/>
+                    <span class="title_sub_tech">Websockets</span>
+                </li>
+                <li class="clip img-circle new">
+                    <img src="images/logo/svg/yarn.svg"/>
+                    <span class="title_sub_tech">Yarn</span>
+                </li>
+                <li class="clear"></li>
+            </ul>
+        </div>
+        <div class="row no-margin">
+            <div class="col-lg-12 text-center">
+                <h2 class="heading">Server side stack</h2>
+                <hr class="star-light">
+            </div>
+        </div>
+        <div class="row stack-container no-margin">
+            <ul class="text-center stacks">
+                <li class="clip img-circle">
+                    <img src="images/logo/svg/spring-boot.svg" />
+                    <span class="title_sub_tech">Spring Boot</span>
+                </li>
+                <li class="clip img-circle">
+                    <img src="images/logo/icons/spring.png"/>
+                    <span class="title_sub_tech">Spring Security</span>
+                </li>
+                <li class="clip img-circle new">
+                    <img src="images/logo/icons/maven.png" class="invert-hover-white width" />
+                    <span class="title_sub_tech">Maven</span>
+                </li>
+                <li class="clip img-circle">
+                    <img src="images/logo/svg/hibernate.svg" />
+                    <span class="title_sub_tech">Hibernate</span>
+                </li>
+                <li class="clip img-circle new">
+                    <img src="images/logo/icons/liquibase.gif" class="width" />
+                    <span class="title_sub_tech">Liquibase</span>
+                </li>
+                <li class="clip img-circle new">
+                    <img src="images/logo/svg/mysql.svg" />
+                    <span class="title_sub_tech">MySQL</span>
+                </li>
+                <li class="clip img-circle new">
+                    <img src="images/logo/svg/elasticsearch.svg"/>
+                    <span class="title_sub_tech">ElasticSearch</span>
+                </li>
+                <li class="clip img-circle new">
+                    <img src="images/logo/icons/swagger.png"/>
+                    <span class="title_sub_tech">Swagger</span>
+                </li>
+                <li class="clear"></li>
+            </ul>
+        </div>
+        <div class="row no-margin">
+            <div class="col-lg-12 text-center">
+                <h2 class="heading">CI/CD options</h2>
+                <hr class="star-light">
+            </div>
+        </div>
+        <div class="row stack-container no-margin">
+            <ul class="text-center stacks">
+                <li class="clip img-circle new">
+                    <img src="images/logo/semaphore-ci.png"/>
+                    <span class="title_sub_tech">SemaphoreCI</span>
+                </li>
+                <li class="clip img-circle new">
+                    <img src="images/logo/codecov.png"/>
+                    <span class="title_sub_tech">CodeCov</span>
+                </li>
+                <li class="clip img-circle new">
+                    <img src="images/logo/dependabot.png"/>
+                    <span class="title_sub_tech">DependaBot</span>
+                </li>
+                <li class="clear"></li>
+            </ul>
+        </div>
+    </section>
+</div>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://suricate-io.github.io",
+  "logo": "https://suricate-io.github.io/images/logo/suricate.png",
+  "name" : "suricate",
+  "sameAs" : [ "https://twitter.com/suricateio",
+    "https://github.com/suricate-io/suricate"]
+}
+</script>
