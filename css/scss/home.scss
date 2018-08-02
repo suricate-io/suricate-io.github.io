@@ -4,9 +4,9 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-$primary-color: #985f0d;
+$primary-color: #8c5405;
 $color-clear-blue: #91d5fb;
-$color-blue: #985f0d;
+$color-blue: #8c5405;
 $dark-blue: #09486b;
 body {
     overflow-x: hidden;
@@ -83,9 +83,9 @@ hr {
         }
     }
     &.star-primary {
-        border-color: #2c3e50;
+        border-color: #9d9d9d;
         &:after {
-            color: #2c3e50;
+            color: #9d9d9d;
             background-color: #F9F9F9;
         }
     }
@@ -219,13 +219,13 @@ section {
         background: $primary-color;
         a {
             outline: 0;
-            color: #2c3e50;
+            color: #9d9d9d;
             &:hover,
             &:focus,
             &:active,
             &.active {
                 outline: 0;
-                color: #2c3e50;
+                color: #9d9d9d;
             }
         }
     }

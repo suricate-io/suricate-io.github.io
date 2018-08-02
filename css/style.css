@@ -97,8 +97,8 @@ a:hover {
 
 .cse input.gsc-search-button,
 input.gsc-search-button {
-  background-color: #985f0d !important;
-  border: 1px solid #985f0d; }
+  background-color: #8c5405 !important;
+  border: 1px solid #8c5405; }
 
 .inline-search {
   position: relative;
@@ -1418,12 +1418,12 @@ footer {
         padding: 10px; }
   footer .footer-above {
     padding-top: 20px;
-    background-color: #2c3e50; }
+    background-color: #9d9d9d; }
   footer .footer-col {
     margin-bottom: 50px; }
   footer .footer-below {
     padding: 25px 0;
-    background-color: #233140; }
+    background-color: #6a737d; }
     footer .footer-below a {
       color: white; }
 
@@ -1488,7 +1488,7 @@ footer {
     width: 1px;
     height: 75px;
     margin-left: 35px;
-    background-color: #2c3e50;
+    background-color: #9d9d9d;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
@@ -1496,7 +1496,7 @@ footer {
       z-index: 1052;
       width: 1px;
       height: 75px;
-      background-color: #2c3e50;
+      background-color: #9d9d9d;
       -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
       transform: rotate(90deg); }
@@ -1508,7 +1508,7 @@ footer {
 .flat-blue a.btn-social {
   color: #fff; }
   .flat-blue a.btn-social:hover {
-    color: #985f0d; }
+    color: #8c5405; }
 
 .btn-outline {
   margin-top: 15px;
@@ -1520,11 +1520,11 @@ footer {
   transition: all .3s ease-in-out; }
   .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
     border: solid 2px #fff;
-    color: #985f0d;
+    color: #8c5405;
     background: #fff; }
   .btn-outline.blue {
-    color: #985f0d;
-    border-color: #985f0d; }
+    color: #8c5405;
+    border-color: #8c5405; }
 
 .team-member {
   max-width: 250px !important;

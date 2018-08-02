@@ -17,10 +17,10 @@ p {
 
 a {
   outline: 0;
-  color: #985f0d; }
+  color: #8c5405; }
   a:hover, a:focus, a:active, a.active {
     outline: 0;
-    color: #985f0d; }
+    color: #8c5405; }
 
 h1,
 h2,
@@ -59,12 +59,12 @@ hr.star-light {
   border-color: #fff; }
   hr.star-light:after {
     color: #fff;
-    background-color: #985f0d; }
+    background-color: #8c5405; }
 
 hr.star-primary {
-  border-color: #2c3e50; }
+  border-color: #9d9d9d; }
   hr.star-primary:after {
-    color: #2c3e50;
+    color: #9d9d9d;
     background-color: #F9F9F9; }
 
 .img-centered {
@@ -73,7 +73,7 @@ hr.star-primary {
 header {
   text-align: center;
   color: #fff;
-  background: #985f0d; }
+  background: #8c5405; }
   header .card .card-body {
     text-align: left; }
   header .card.summary-inline .card-body {
@@ -158,13 +158,13 @@ section {
     padding: 10px 0; }
   section.success, section.blue {
     color: #fff;
-    background: #985f0d; }
+    background: #8c5405; }
     section.success a, section.blue a {
       outline: 0;
-      color: #2c3e50; }
+      color: #9d9d9d; }
       section.success a:hover, section.success a:focus, section.success a:active, section.success a.active, section.blue a:hover, section.blue a:focus, section.blue a:active, section.blue a.active {
         outline: 0;
-        color: #2c3e50; }
+        color: #9d9d9d; }
   section .title {
     padding: 15px; }
     section .title .head-icons {
@@ -313,7 +313,7 @@ section {
   opacity: 1; }
 
 .floating-label-form-group-with-focus label {
-  color: #985f0d; }
+  color: #8c5405; }
 
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eee; }

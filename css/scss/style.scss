@@ -1,8 +1,8 @@
 // Global Elements
 $side-menu-width: 300px;
-$primary-color: #985f0d;
+$primary-color: #8c5405;
 $color-clear-blue: #91d5fb;
-$color-blue: #985f0d;
+$color-blue: #8c5405;
 $dark-blue: #09486b;
 html {
     height: 100%
@@ -1965,14 +1965,14 @@ footer {
     }
     .footer-above {
         padding-top: 20px;
-        background-color: #2c3e50;
+        background-color: #9d9d9d;
     }
     .footer-col {
         margin-bottom: 50px;
     }
     .footer-below {
         padding: 25px 0;
-        background-color: #233140;
+        background-color: #6a737d;
         a {
             color: white;
         }
@@ -2054,7 +2054,7 @@ footer {
             width: 1px;
             height: 75px;
             margin-left: 35px;
-            background-color: #2c3e50;
+            background-color: #9d9d9d;
             -webkit-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             transform: rotate(45deg);
@@ -2062,7 +2062,7 @@ footer {
                 z-index: 1052;
                 width: 1px;
                 height: 75px;
-                background-color: #2c3e50;
+                background-color: #9d9d9d;
                 -webkit-transform: rotate(90deg);
                 -ms-transform: rotate(90deg);
                 transform: rotate(90deg);
