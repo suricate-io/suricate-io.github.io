@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">{% if '/index.html' == page.url or '/' == page.url %}
+    <meta name="description" content="Suricate is an Open Source application to monitor (almost) everything">
+    <meta name="author" content="Suricate-IO Team">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@suricateio" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image:src" content="" />
+    <meta name="twitter:url" content="https://suricate-io.github.io/" />{% endif %}
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#353d47">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#353d47">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#353d47">
+    <title>{{ page.title }}</title>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css">
+
+    <!-- CSS Libs -->
+    <link rel="stylesheet" type="text/css" href="/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/lib/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/lib/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="/lib/css/dataTables.bootstrap.css">
+    <!-- CSS App -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/themes/flat-blue.css">
+    {% if page.home == true %}
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    {% endif %}
+    <!-- Bootstrap Docs CSS subset to get icon -->
+    <!--<link href="/css/bootstrap-docs.css" rel="stylesheet">-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicon with QHD -->
+    <link rel="icon" type="image/x-icon" href="/images/logo/favicon.ico">
+</head>
+
+<body class="flat-blue">
+    <div class="app-container{% if page.home == true %} home{% else %} expanded {% endif %}">
+        <div class="row content-container">
+            <nav class="navbar navbar-inverse navbar-fixed-top navbar-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-expand-toggle{% if page.home != true %} fa-rotate-90{% endif %}">
+                            <i class="fa fa-bars icon"></i>
+                        </button>
+                        <ol class="breadcrumb navbar-breadcrumb">
+                            <li class="active"></li>
+                        </ol>
+                        <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
+                            <i class="fa fa-th icon"></i>
+                        </button>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        {% if page.home == true %}
+                        <li class="page-scroll">
+                            <a href="#news">About</a>
+                        </li>
+                        {% endif %}
+                        <li>
+                            <a href="https://github.com/suricate-io/suricate" class="dropdown-toggle navlink" target="_blank" role="button"><i class="fab fa-github fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <button type="button" class="navbar-right-expand-toggle visible-xs pull-right light">
+                                <i class="fa fa-times icon"></i>
+                            </button>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+            <div class="side-menu sidebar-inverse">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="side-menu-container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="/">
+                                <div class="icon"><img src="/images/logo/suricate.png" height="50px"></div>
+                                <div class="title brand">Suricate </div>
+                            </a>
+                            <button type="button" class="navbar-expand-toggle pull-right visible-xs">
+                                <i class="fa fa-times icon"></i>
+                            </button>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li {% if '/index.html' == page.url %}class="active" {% endif %}>
+                                <a href="/">
+                                    <span class="icon fa fa-home"></span><span class="title">Home</span>
+                                </a>
+                            </li>
+                            <li class="panel panel-default dropdown">
+                                <a data-toggle="collapse" href="#dropdown-2">
+                                    <span class="icon fa fa-helicopter"></span><span class="title">Contributing</span>
+                                </a>
+                                <!-- Dropdown level 1 -->
+                                <div id="dropdown-2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li {% if '/contributing-individuals/' == page.url %}class="active" {% endif %}><a href="/contributing-individuals/"><i class="fa fa-fw fa-laptop-code"></i> Contributing individuals</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="panel panel-default dropdown">
+                                <a data-toggle="collapse" href="#dropdown-3">
+                                    <span class="icon fa fa-fw fa-wrench"></span><span class="title">Setting up your environment</span>
+                                </a>
+                                <!-- Dropdown level 1 -->
+                                <div id="dropdown-3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li {% if '/installation/' == page.url %}class="active" {% endif %}><a href="/installation/"><i class="fa fa-fw fa-tasks"></i> Installing suricate</a></li>
+                                            <li {% if '/configuring-ide/' == page.url %}class="active" {% endif %}><a href="/configuring-ide/"><i class="fa fa-fw fa-keyboard"></i> Configuring your IDE</a></li>
+                                            <li {% if '/docker-compose/' == page.url %}class="active" {% endif %}><a href="/docker-compose/"><i class="fa fa-fw fa-docker"></i> Docker Compose</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li {% if '/tips/' == page.url %}class="active" {% endif %}><a href="/tips/"><span class="icon fa fa-fw fa-cogs"></span><span class="title">Tips'n tricks</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </nav>
+            </div>
+            <!-- Main Content -->
+            <div id="page-wrapper" class="container-fluid">
+                <div class="side-body" id="page-top">
+                    {% if page.layout_grid == true %} {{ content }} {% else %}
+                    <div class="row page-content-wrapper">
+                        <div class="col-lg-12">
+                            {{ content }}
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                    {% endif %}
+
+                    <!-- Footer -->
+                    <footer class="text-center">
+                        <div class="footer-above">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="footer-col col-md-4">
+                                        <ul class="list-inline">
+                                            <li>
+                                                <a href="https://twitter.com/suricateio" target="_blank" class="btn-social btn-outline"><i class="fab fa-fw fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/suricate-io/suricate" target="_blank" class="btn-social btn-outline"><i class="fab fa-fw fa-github"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-below">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        Copyright &copy;SuricateIO 2018 | Theme inspired from <a href="https://www.jhipster.tech" target="_blank">jHipster</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+                <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+                <div class="scroll-top page-scroll visible-xs visible-sm">
+                    <a class="btn btn-primary" href="#page-top">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- /#page-wrapper -->
+        </div>
+        <!-- /#wrapper -->
+    </div>
+    <!-- Javascript Libs -->
+    <script type="text/javascript" src="/lib/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/lib/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/lib/js/ace.js"></script>
+    <script type="text/javascript" src="/lib/js/mode-html.js"></script>
+    <script type="text/javascript" src="/lib/js/theme-github.js"></script>
+    <script type="text/javascript" src="/lib/js/jquery.easing.min.js"></script>
+
+    {% if page.angularjs == true %}
+    <script type="text/javascript" src="/lib/js/angular-1.4.8.min.js"></script>
+    <script type="text/javascript" src="/lib/js/angular-route-1.4.8.min.js"></script>
+    {% endif %}
+
+    <!--App Javascript -->
+    <script type="text/javascript" src="/js/app.js"></script>
+    {% if page.home == true %}
+    <script type="text/javascript" src="/js/services.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/marketplace-list.js"></script>
+    <script type="text/javascript" src="/js/users.js"></script>
+    {% endif %}
+    {% if page.market == true %}
+    <script type="text/javascript" src="/lib/js/c3-0.4.10.min.js"></script>
+    <script type="text/javascript" src="/lib/js/d3-3.5.10.min.js"></script>
+    <script type="text/javascript" src="/lib/js/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="/lib/js/Showdown.min.js"></script>
+    <script type="text/javascript" src="/lib/js/markdown.js"></script>
+    <script type="text/javascript" src="/js/services.js"></script>
+    <script type="text/javascript" src="/js/marketplace.js"></script>
+    <script type="text/javascript" src="/js/marketplace-list.js"></script>
+    <script type="text/javascript" src="/js/marketplace-details.js"></script>
+    {% endif %}
+    {% if page.companies-using-suricate == true %}
+    <script type="text/javascript" src="/js/users.js"></script>
+    {% endif %}
+    <script>
+    if (self !== top) {
+        window.top.location.href = "https://suricate-io.github.io";
+    }
+    </script>
+</body>
+
+</html>
