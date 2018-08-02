@@ -1,0 +1,13 @@
+{
+  "name": "suricate-public-wesite",
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-sass": "*",
+    "gulp-imagemin": "2.4.0"
+  },
+  "private": true,
+  "scripts": {
+      "start": "bundle exec jekyll serve --host=127.O.O.1"
+  }
+}
