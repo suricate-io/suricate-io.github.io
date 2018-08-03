@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Contributing Companies
+title: Contributing Individuals
 permalink: /contributing-individuals/
 ---
 # <i class="fa fa-keyboard-o"></i> Individual contributions
