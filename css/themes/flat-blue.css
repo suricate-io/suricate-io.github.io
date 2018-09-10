@@ -26,7 +26,7 @@
       .flat-blue .navbar .navbar-nav > li > a, .flat-blue .navbar.navbar-default .navbar-nav > li > a {
         color: darkgrey; }
     .flat-blue .navbar .navbar-nav > li:hover > a, .flat-blue .navbar.navbar-default .navbar-nav > li:hover > a {
-      color: #8c5405; }
+      color: #ffad42; }
     .flat-blue .navbar .navbar-nav > li.open > a, .flat-blue .navbar.navbar-default .navbar-nav > li.open > a {
       background-color: transparent;
       color: #8c5405; }
@@ -53,11 +53,11 @@
           background-color: #FFF;
           color: #FA2A00; }
   .flat-blue .navbar.navbar-inverse {
-    background-color: darkgrey;
+    background-color: #4f1d00;
     border-bottom: 0px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
     .flat-blue .navbar.navbar-inverse > .container-fluid {
-      background-color: darkgrey; }
+      background-color: #4f1d00; }
     .flat-blue .navbar.navbar-inverse .navbar-header .navbar-brand {
       color: #F9F9F9; }
     .flat-blue .navbar.navbar-inverse .navbar-header .navbar-expand-toggle {
@@ -73,7 +73,7 @@
       .flat-blue .navbar.navbar-inverse .navbar-nav > li > a {
         color: #FFF; }
     .flat-blue .navbar.navbar-inverse .navbar-nav > li:hover > a {
-      color: #8c5405; }
+      color: #ffad42; }
     .flat-blue .navbar.navbar-inverse .navbar-nav > li.open > a {
       background-color: transparent;
       color: #8c5405; }
@@ -131,10 +131,10 @@
         .flat-blue .side-menu .navbar li.dropdown .panel-body {
           padding: 0 7px; }
   .flat-blue .side-menu.sidebar-inverse {
-    background-color: darkgrey;
+    background-color: #4f1d00;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08); }
     .flat-blue .side-menu.sidebar-inverse .navbar {
-      background-color: darkgrey;
+      background-color: #4f1d00;
       border-bottom: 0px;
       -moz-box-shadow: none;
       -webkit-box-shadow: none;
@@ -144,10 +144,10 @@
         .flat-blue .side-menu.sidebar-inverse .navbar li > a {
           color: #FFF; }
       .flat-blue .side-menu.sidebar-inverse .navbar li.active > a {
-        color: darkgrey;
+        color: #ff7c00;
         border-left: 3px solid #8c5405;
         border-right: 0px solid #8c5405;
-        background-color: #FFF; }
+        background-color: #ecf0f5; }
         .flat-blue .side-menu.sidebar-inverse .navbar li.active > a .icon {
           margin-left: -3px; }
       .flat-blue .side-menu.sidebar-inverse .navbar > li:hover > a {
@@ -179,7 +179,7 @@
     background-color: #8c5405;
     color: #FFF; }
   .flat-blue .card.dark {
-    background-color: #ff8500;
+    background-color: #ff7c00;
     color: #FFF; }
   .flat-blue .card.red, .flat-blue .card.yellow, .flat-blue .card.green, .flat-blue .card.blue, .flat-blue .card.dark {
     border: 0; }
@@ -214,7 +214,7 @@
   .flat-blue .card.summary-inline.blue:hover {
     background-color: darkgrey; }
   .flat-blue .card.summary-inline.dark:hover {
-    background-color: darkgrey; }
+    background-color: #ffad42; }
   .flat-blue .card.card-success .card-header {
     background-color: #1ABC9C; }
     .flat-blue .card.card-success .card-header .title {

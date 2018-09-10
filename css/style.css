@@ -5,11 +5,16 @@ body {
   padding-top: 0px;
   height: 100%;
   position: relative;
-  font-size: 16px; }
+  font-size: 16px; 
+  background-color: #ecf0f5
+}
 
 * {
   outline: none; }
 
+.container-fluid {
+  background-color: #ecf0f5;
+}
 .navlink {
   font-family: 'Roboto Condensed', sans-serif;
   height: 60px;
@@ -290,6 +295,7 @@ input.gsc-search-button {
           padding: 0;
           width: 100%;
           overflow: hidden;
+          background-color: #ecf0f5;
           font-family: 'Roboto Condensed', sans-serif; }
           .app-container .content-container .side-menu .navbar-header .navbar-brand .icon {
             width: 60px;
@@ -1418,14 +1424,18 @@ footer {
         padding: 10px; }
   footer .footer-above {
     padding-top: 20px;
-    background-color: #9d9d9d; }
+    background-color: #b27245; }
   footer .footer-col {
     margin-bottom: 50px; }
   footer .footer-below {
     padding: 25px 0;
-    background-color: #6a737d; }
+    background-color: #b27245; }
     footer .footer-below a {
       color: white; }
+  footer .footer-below .container {
+    display: flex;
+    align-items: center;    
+  }
 
 .btn-social {
   display: inline-block;

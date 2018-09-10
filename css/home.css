@@ -73,7 +73,7 @@ hr.star-primary {
 header {
   text-align: center;
   color: #fff;
-  background: #8c5405; }
+  background: #7f461b; }
   header .card .card-body {
     text-align: left; }
   header .card.summary-inline .card-body {
@@ -158,7 +158,7 @@ section {
     padding: 10px 0; }
   section.success, section.blue {
     color: #fff;
-    background: #8c5405; }
+    background: #7f461b; }
     section.success a, section.blue a {
       outline: 0;
       color: #9d9d9d; }
