@@ -16,7 +16,7 @@ steps:
 
 - task: UseRubyVersion@0
   displayName: 'Use Ruby >= 2.4'
-- script: 'gem install bundler'
+- script: 'gem install bundler -v 1.16.3'
   displayName: 'Install bundler'
 - script: 'bundle install'
   displayName: 'Install Jekyll and Dependencies'
