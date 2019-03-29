@@ -8,6 +8,7 @@
   },
   "private": true,
   "scripts": {
-      "start": "bundle exec jekyll serve --host=127.O.O.1"
+    "start": "bundle exec jekyll serve --host=127.O.O.1",
+    "build": "bundle exec jekyll build"
   }
 }
